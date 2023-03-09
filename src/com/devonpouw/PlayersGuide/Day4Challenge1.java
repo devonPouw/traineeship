@@ -1,4 +1,4 @@
-package com.devonpouw.week1;
+package com.devonpouw.PlayersGuide;
 
 public class Day4Challenge1 {
    static int myInt = 2_000_000_000;

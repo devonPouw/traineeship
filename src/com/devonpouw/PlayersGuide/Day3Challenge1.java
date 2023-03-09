@@ -1,4 +1,4 @@
-package com.devonpouw.week1;
+package com.devonpouw.PlayersGuide;
 
 import java.util.Scanner;
 
