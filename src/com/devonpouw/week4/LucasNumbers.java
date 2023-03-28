@@ -2,7 +2,7 @@ package com.devonpouw.week4;
 
 
 public class LucasNumbers {
-    public static final int input = 2;
+    public static final int input = 20;
     public static void main(String[] args) {
         int lucasNum1 = 2, lucasNum2 = 1, lucasNum3;
 

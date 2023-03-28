@@ -17,13 +17,21 @@ public class Day10Challenge1 {
         if ((y > 0) && (x > 0))
             return "to the NorthEast";
          else if ((y > 0) && (x < 0))
-            return "to the SouthEast";
+            return "to the NorthWest";
         else if((y < 0) && (x > 0))
-           return "to the NorthWest";
-         else if ((y < 0) && (x < 0))
-           return "to the SouthWest";
+           return "to the SouthEast";
+         else if ((y == 0) && (x < 0))
+           return "to the West";
+        else if ((y == 0) && (x > 0))
+            return "to the East";
+        else if ((y < 0) && (x == 0))
+            return "to the South";
+        else if ((y > 0) && (x == 0))
+            return "to the North";
+        else if ((y < 0) && (x < 0))
+            return "to the SouthWest";
          else if ((y == 0) && (x == 0))
           return "Here!";
-        return null;
+        return "missing";
     }
 }
