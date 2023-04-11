@@ -2,7 +2,6 @@ package com.devonpouw.PlayersGuide;
 
 public class Day13Challenge1 {
     public static void main(String[] args) {
-        int normal = 1;
         int fire = 3;
         int electric = 5;
         for (int i = 1; i <= 100; i++) {
