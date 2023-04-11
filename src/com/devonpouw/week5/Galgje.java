@@ -65,7 +65,7 @@ public class Galgje {
         }
         System.out.printf("| Remaining: %d ", tries_remaining);
         System.out.print("| Incorrect: ");
-        incorrect_letters.forEach(c -> System.out.print(c));
+        incorrect_letters.forEach(System.out::print);
         System.out.println(" |");
     }
 
