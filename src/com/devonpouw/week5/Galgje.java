@@ -81,7 +81,7 @@ public class Galgje {
         do {
             try {
                 System.out.print(prompt);
-                scan_out = scan.next();
+                scan_out = scan.next().toLowerCase();
                 if (scan_out.length() > 1) {
                     System.out.println("Enter only one character please.");
                     continue;
