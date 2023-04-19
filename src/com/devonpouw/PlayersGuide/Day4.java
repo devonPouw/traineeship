@@ -18,9 +18,9 @@ public class Day4 {
         System.out.println("Example of char = " + (myChar = 'u'));
         System.out.println("Example of double = " + (myDouble = 123.12312));
         System.out.println("Example byte = " + (myByte = 1));
-        System.out.println("Example of long = " + (myLong = 5234234l));
+        System.out.println("Example of long = " + (myLong = 5234234L));
         System.out.println("Example of short = " + (myShort = 200));
-        System.out.println("Example of float = " + (myFloat = 2.1234f));
+        System.out.println("Example of float = " + (myFloat = 2.1234F));
 
     }
 }
