@@ -2,7 +2,7 @@ package com.devonpouw.PlayersGuide;
 
 import java.awt.*;
 import java.util.Scanner;
-public class Day8Challenge1 {
+public class Day8 {
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_RESET = "\u001B[0m";
     public static void main(String[] args){

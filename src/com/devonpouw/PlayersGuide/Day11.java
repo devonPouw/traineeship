@@ -1,7 +1,7 @@
 package com.devonpouw.PlayersGuide;
 import java.util.Scanner;
 
-public class Day11Challenge2 {
+public class Day11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to my outfitter shop.");

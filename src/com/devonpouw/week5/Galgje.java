@@ -9,6 +9,7 @@ public class Galgje {
     public static void main(String[] args) {
         String word = askForString("Enter word for hangman: ").toLowerCase();
         List<Character> guessed_letters = new ArrayList<>();
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n");
         int tries = 1;
         final int MAX_TRIES = 5;
 

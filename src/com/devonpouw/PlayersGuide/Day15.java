@@ -1,6 +1,6 @@
 package com.devonpouw.PlayersGuide;
 
-public class Day15Challenge1 {
+public class Day15 {
     public static void main(String[] args) {
         int[] array = {4, 51, -7, 13, -99, 15, -8, 45, 90};
         int currentSmallest = Integer.MAX_VALUE; // Start higher than anything in the array.

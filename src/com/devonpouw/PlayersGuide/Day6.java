@@ -2,7 +2,7 @@ package com.devonpouw.PlayersGuide;
 
 import java.util.Scanner;
 
-public class Day6Challenge1 {
+public class Day6 {
 final static int amountOfSisters = 4;
     public static void main(String[] args) {
         System.out.println("How many eggs were gathered today?");

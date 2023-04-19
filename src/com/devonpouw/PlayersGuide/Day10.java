@@ -2,7 +2,7 @@ package com.devonpouw.PlayersGuide;
 
 import java.util.Scanner;
 
-public class Day10Challenge1 {
+public class Day10 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {

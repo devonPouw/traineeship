@@ -1,6 +1,6 @@
 package com.devonpouw.PlayersGuide;
 
-public class Day13Challenge1 {
+public class Day13 {
     public static void main(String[] args) {
         int fire = 3;
         int electric = 5;

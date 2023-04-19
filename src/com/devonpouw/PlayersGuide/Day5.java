@@ -2,7 +2,7 @@ package com.devonpouw.PlayersGuide;
 
 import java.util.Scanner;
 
-public class Day5Challenge2 {
+public class Day5 {
 
     /*Scanner input = new Scanner(System.in);
     //Area = base x height / 2

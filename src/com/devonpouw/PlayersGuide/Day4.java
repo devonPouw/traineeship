@@ -1,6 +1,6 @@
 package com.devonpouw.PlayersGuide;
 
-public class Day4Challenge1 {
+public class Day4 {
    static int myInt = 2_000_000_000;
    static String myString = "hello";
    static boolean myBoolean = true;

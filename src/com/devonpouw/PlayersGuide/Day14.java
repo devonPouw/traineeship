@@ -2,7 +2,7 @@ package com.devonpouw.PlayersGuide;
 
 import java.util.Scanner;
 
-public class Day14Challenge1 {
+public class Day14 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] getallen = new int[5];

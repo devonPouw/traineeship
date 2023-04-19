@@ -2,7 +2,7 @@ package com.devonpouw.PlayersGuide;
 
 import java.util.Scanner;
 
-public class Day7Challenge1 {
+public class Day7 {
     final static int estate = 1;
     final static int dutchy = 3;
     final static int province = 6;

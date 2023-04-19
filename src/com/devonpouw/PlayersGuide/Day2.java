@@ -2,7 +2,7 @@ package com.devonpouw.PlayersGuide;
 
 import java.util.Scanner;
 
-public class Day2Challenge3 {
+public class Day2 {
     public static void main(String[] args) {
         System.out.println("Bread is ready.");
         System.out.println("Who is the bread for?");
