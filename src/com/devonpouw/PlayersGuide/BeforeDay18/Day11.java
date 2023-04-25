@@ -1,4 +1,5 @@
-package com.devonpouw.PlayersGuide;
+package com.devonpouw.PlayersGuide.BeforeDay18;
+
 import java.util.Scanner;
 
 public class Day11 {

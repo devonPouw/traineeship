@@ -1,4 +1,4 @@
-package com.devonpouw.PlayersGuide;
+package com.devonpouw.PlayersGuide.BeforeDay18;
 
 import java.util.Scanner;
 
@@ -10,26 +10,24 @@ public class Day12 {
         int randomNum = (int) (Math.random() * 1001);
         int guesses = 10;
 
-        do{
+        do {
             if (guesses == 0) {
                 System.out.println("Game over");
                 return;
             }
             int guess = scanner.nextInt();
-            if (guess > randomNum){
+            if (guess > randomNum) {
                 guesses--;
                 System.out.println(guesses + " guesses left");
                 System.out.println("Your guess was too high");
-            } else if (guess < randomNum){
+            } else if (guess < randomNum) {
                 guesses--;
                 System.out.println(guesses + " guesses left");
                 System.out.println("Your guess was too low");
-            }
-
-            else {
+            } else {
                 System.out.println("You guessed the right number");
                 return;
             }
-        }while (true);
+        } while (true);
     }
 }

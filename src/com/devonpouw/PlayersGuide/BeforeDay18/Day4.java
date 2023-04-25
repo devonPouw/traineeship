@@ -1,15 +1,16 @@
-package com.devonpouw.PlayersGuide;
+package com.devonpouw.PlayersGuide.BeforeDay18;
 
 public class Day4 {
-   static int myInt = 2_000_000_000;
-   static String myString = "hello";
-   static boolean myBoolean = true;
-   static char myChar = 't';
-   static double myDouble = 1.392_847_239_847_893;
-   static  byte myByte = 3;
-   static long myLong = 3_123_912_103L;
-   static short myShort = 10_000;
-   public static float myFloat = 5.0655675F;
+    static int myInt = 2_000_000_000;
+    static String myString = "hello";
+    static boolean myBoolean = true;
+    static char myChar = 't';
+    static double myDouble = 1.392_847_239_847_893;
+    static byte myByte = 3;
+    static long myLong = 3_123_912_103L;
+    static short myShort = 10_000;
+    public static float myFloat = 5.0655675F;
+
     public static void main(String[] args) {
 
         System.out.println("Example of int = " + (myInt = 3));

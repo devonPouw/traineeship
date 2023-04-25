@@ -1,4 +1,4 @@
-package com.devonpouw.PlayersGuide;
+package com.devonpouw.PlayersGuide.BeforeDay18;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Day2 {
         Scanner breadUser = new Scanner(System.in);
         String name = breadUser.next();
 
-        System.out.println("Noted: "+ name +" got bread");
+        System.out.println("Noted: " + name + " got bread");
 
 
     }

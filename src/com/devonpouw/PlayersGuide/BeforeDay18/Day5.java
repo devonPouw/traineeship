@@ -1,4 +1,4 @@
-package com.devonpouw.PlayersGuide;
+package com.devonpouw.PlayersGuide.BeforeDay18;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class Day5 {
         double height = input.nextDouble();
         System.out.println("What is the base of the triangle?");
         double base = input.nextDouble();
-        double area = (height*base/2);
+        double area = (height * base / 2);
 
         System.out.println("The area of the triangle is: " + area);
     }

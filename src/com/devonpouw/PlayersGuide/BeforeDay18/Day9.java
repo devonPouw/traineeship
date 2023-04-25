@@ -1,9 +1,9 @@
-package com.devonpouw.PlayersGuide;
+package com.devonpouw.PlayersGuide.BeforeDay18;
 
 import java.util.Scanner;
 
 public class Day9 {
-   static Scanner input = new Scanner(System.in);
+    static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -12,6 +12,6 @@ public class Day9 {
             int clock = input.nextInt();
             String sound = (clock % 2 == 0) ? "tick" : "tock";
             System.out.println(sound);
-        }while (true);
+        } while (true);
     }
-    }
+}

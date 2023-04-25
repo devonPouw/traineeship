@@ -17,4 +17,7 @@ public class Manager extends Employee{
     public void reportProjectStatus(){
         System.out.println("Do your job!");
     }
+    public String toString(){
+        return "Deze manager heeft teamsize " + teamSize;
+    }
 }

@@ -1,4 +1,4 @@
-package com.devonpouw.PlayersGuide;
+package com.devonpouw.PlayersGuide.BeforeDay18;
 
 public class Day13 {
     public static void main(String[] args) {

@@ -13,6 +13,12 @@ public class Employee {
         this.phoneNumber = phoneNumber;
         this.experienceInYears = experienceInYears;
     }
+    public Employee(String name, String address, String phoneNumber){
+        this.name = name;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+        this.experienceInYears = 0;
+    }
 
     public String getName() {
         return name;
@@ -43,5 +49,8 @@ public class Employee {
             return;
         }
         this.experienceInYears = experienceInYears;
+    }
+    public String toString(){
+        return "Deze medewerker heet " + name;
     }
 }

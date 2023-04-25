@@ -1,4 +1,4 @@
-package com.devonpouw.PlayersGuide;
+package com.devonpouw.PlayersGuide.BeforeDay18;
 
 import java.util.Scanner;
 
@@ -8,12 +8,17 @@ public class Day14 {
         int[] getallen = new int[5];
         int[] getallenKopie = new int[5];
         System.out.println("Enter 5 numbers to add to the list:");
-       for (int i = 0; i < getallen.length; i++){
-           if(sc.hasNextInt()){
-               getallen[i] = sc.nextInt();
-           }
-       }
-           getallenKopie = getallen;
+        for (int i = 0; i < getallen.length; i++) {
+            if (sc.hasNextInt()) {
+                getallen[i] = sc.nextInt();
+            }
+        }
+        getallenKopie[0] = getallen[0];
+        getallenKopie[1] = getallen[1];
+        getallenKopie[2] = getallen[2];
+        getallenKopie[3] = getallen[3];
+        getallenKopie[4] = getallen[4];
+
 
         System.out.println("The elements in the array are:");
         for (int j : getallen) {

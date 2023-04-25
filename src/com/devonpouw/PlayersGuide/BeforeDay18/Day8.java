@@ -1,11 +1,13 @@
-package com.devonpouw.PlayersGuide;
+package com.devonpouw.PlayersGuide.BeforeDay18;
 
 import java.awt.*;
 import java.util.Scanner;
+
 public class Day8 {
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_RESET = "\u001B[0m";
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
 
         System.out.print("Target row: ");
         Scanner rowScanner = new Scanner(System.in);
@@ -16,12 +18,12 @@ public class Day8 {
         int targetColumn = columnScanner.nextByte();
 
         int rowTarget1 = targetRow;
-        int rowTarget2 = targetRow-1;
+        int rowTarget2 = targetRow - 1;
         int rowTarget3 = targetRow;
-        int rowTarget4 = targetRow+1;
-        int columnTarget1 = targetColumn-1;
+        int rowTarget4 = targetRow + 1;
+        int columnTarget1 = targetColumn - 1;
         int columnTarget2 = targetColumn;
-        int columnTarget3 = targetColumn+1;
+        int columnTarget3 = targetColumn + 1;
         int columnTarget4 = targetColumn;
 
         System.out.println("Deploy to:");
