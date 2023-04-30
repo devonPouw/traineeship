@@ -19,7 +19,7 @@ public class Day18Main {
             } else {
                 System.out.println("Cannon is expected to deal 1 damage");
             }
-            int returnVal = Day18.askForNumberInRange("Enter desired cannon range: ", 1, 100);
+            int returnVal = Day18.askForNumberInRange("Enter desired cannon range (1 - 100) : ", 1, 100);
             if (returnVal < randomNum) {
                 System.out.println("The round fell short of the manticore!");
             } else if (returnVal == randomNum) {
