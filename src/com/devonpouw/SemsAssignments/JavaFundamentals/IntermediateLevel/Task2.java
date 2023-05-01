@@ -3,8 +3,8 @@ package com.devonpouw.SemsAssignments.JavaFundamentals.IntermediateLevel;
 public class Task2 {
     public static int countEven(int[] numbers) {
         int evenNums = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] % 2 == 0) {
+        for (int number : numbers) {
+            if (number % 2 == 0) {
                 evenNums++;
             }
         }
