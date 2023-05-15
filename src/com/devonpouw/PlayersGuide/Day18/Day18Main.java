@@ -24,20 +24,9 @@ public class Day18Main {
                 System.out.println("The round fell short of the manticore!");
             } else if (returnVal == randomNum) {
                 if (city % three == 0 && city % five == 0) {
-                    manticore--;
-                    manticore--;
-                    manticore--;
-                    manticore--;
-                    manticore--;
-                    manticore--;
-                    manticore--;
-                    manticore--;
-                    manticore--;
-                    manticore--;
+                    manticore -= 10;
                 } else if (city % five == 0 || city % three == 0) {
-                    manticore--;
-                    manticore--;
-                    manticore--;
+                    manticore -= 3;
                 } else {
                     manticore--;
                 }

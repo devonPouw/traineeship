@@ -46,7 +46,17 @@ public class Task8 {
         return String.valueOf(monthNumber);
     }
 
+    public static void testMonthName() {
+        String test1 = monthName(1);
+        String test2 = monthName(12);
+        String test3 = monthName(8);
+        System.out.print(test1 + ", " + test2 + ", " + test3);
+        //Expected: "January, December, August"
+    }
+
     public static void main(String[] args) {
         monthName(9);
+        testMonthName();
     }
+
 }
