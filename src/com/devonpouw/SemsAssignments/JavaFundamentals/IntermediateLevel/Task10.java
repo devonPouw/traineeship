@@ -16,15 +16,15 @@ public class Task10 {
     }
 
     public static ArrayList<Integer> moveZeros(ArrayList<Integer> list) {
-        ArrayList<Integer> result = list;
         int size = list.size();
         for (int i = 0; i < list.size(); i++) {
             list.remove((Integer) 0);
+            size--;
         }
         for (int i = 0; i < size; i++) {
             list.add(0);
         }
-        return result;
+        return list;
     }
 
     public static void testMoveZeros() {

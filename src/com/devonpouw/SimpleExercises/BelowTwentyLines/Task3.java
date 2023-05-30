@@ -1,6 +1,6 @@
-package com.devonpouw.SimpleExercises.TwentyLines;
+package com.devonpouw.SimpleExercises.BelowTwentyLines;
 
-public class Three {
+public class Task3 {
     private static double rareSom(double a, double b, double c, double d, double e, double f) {
         return ((a * b - c * d) / (e - f));
     }

@@ -1,6 +1,6 @@
-package com.devonpouw.SimpleExercises.TwentyLines;
+package com.devonpouw.SimpleExercises.BelowTwentyLines;
 
-public class Two {
+public class Task2 {
     private static void divide(int counter, int num) {
         try {
             System.out.println(counter / num);

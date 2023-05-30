@@ -1,6 +1,6 @@
-package com.devonpouw.SimpleExercises.TwentyLines;
+package com.devonpouw.SimpleExercises.BelowTwentyLines;
 
-public class One {
+public class Task1 {
     private static int sum(int counter, int num) {
         return counter + num;
     }
