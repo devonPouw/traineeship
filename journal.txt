@@ -1,1 +1,6 @@
 Welcome to my journal that keeps up with my progression.
+
+2023-05-31; 14:53 Started PrintAsciiValue SimpleExercises .. 14:57 finished PrintAsciiValue SimpleExercises
+2023-05-31; 14:59 Started HelloName SimpleExercises .. 15:02 finished HelloName SimpleExercises
+2023-05-31; 15:04 Started PrintOddNumbers1to100 SimpleExercises .. 15:06 finised PrintOddNumbers1to100 SimpleExercises
+2023-05-31; 15:08 Started MultiplesOf3 SimpleExercises .. 15:10 finished MultiplesOf3 SimpleExercises
