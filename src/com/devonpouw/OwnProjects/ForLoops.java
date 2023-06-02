@@ -1,9 +1,9 @@
-package com.devonpouw.week7;
+package com.devonpouw.OwnProjects;
 
 public class ForLoops {
     public static void main(String[] args) throws InterruptedException {
-            System.out.println("Hello for-loops!");
-            Thread.sleep(1); // to avoid the warning about throwing an InterruptedException :/
+        System.out.println("Hello for-loops!");
+        Thread.sleep(1); // to avoid the warning about throwing an InterruptedException :/
 // // instructions: please uncomment each piece of code when you start doing the exercise
 // // CTRL + / helps uncomment code!
 
@@ -12,14 +12,14 @@ public class ForLoops {
 //            for (int multiplier = 1; multiplier <= 10; multiplier++) {
 //                System.out.println(multiplier + " x " + 7 + " = " + (multiplier * 7));
 // System.out.printf("%d x 7 = %d%n", multiplier, multiplier * 7); // alternative!
-         //   }
+        //   }
 //
 // // Example 2: processing a string
- String name = "FRANS";
- for (int index = 0; index < name.length(); index++) {
- System.out.printf("Give me an '%c'!!!%n", name.charAt(index));
- }
- System.out.printf("THAT MAKES %s!!!%n", name);
+        String name = "FRANS";
+        for (int index = 0; index < name.length(); index++) {
+            System.out.printf("Give me an '%c'!!!%n", name.charAt(index));
+        }
+        System.out.printf("THAT MAKES %s!!!%n", name);
 
 // // Example 3: processing an array
 //
@@ -211,5 +211,5 @@ public class ForLoops {
 // // 3. a for-loop that prints all ODD Japanese numerals up to 10, so ichi, san ... kyuu (of course you can use
 // // the array defined above...)
 
-        }
     }
+}
