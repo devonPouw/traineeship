@@ -5,3 +5,5 @@ Welcome to my journal that keeps up with my progression.
 2023-05-31; 15:04 Started PrintOddNumbers1to100 SimpleExercises .. 15:06 finised PrintOddNumbers1to100 SimpleExercises
 2023-05-31; 15:08 Started MultiplesOf3 SimpleExercises .. 15:10 finished MultiplesOf3 SimpleExercises
 2023-06-02 19:01 Started ArrayLists .. 20:18 finished ArrayLists
+2023-06-04 15:20 Started ArithmeticOperations SimpleExercises .. 15:22 finished ArithmeticOperations SimpleExercises
+2023-06-04 15:24 Started DisplayNumbersPlusCopies SimpleExercises .. 15:40 finished DisplayNumbersPlusCopies SimpleExercises
