@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Soup {
 
-    private FoodVariations.FoodType type;
-    private FoodVariations.MainIngredient mainIngredient;
-    private FoodVariations.Seasoning seasoning;
+    private final FoodVariations.FoodType type;
+    private final FoodVariations.MainIngredient mainIngredient;
+    private final FoodVariations.Seasoning seasoning;
 
     public Soup(FoodVariations.FoodType type, FoodVariations.MainIngredient mainIngredient, FoodVariations.Seasoning seasoning) {
         this.type = type;
@@ -18,24 +18,14 @@ public class Soup {
         return type;
     }
 
-    public void setType(FoodVariations.FoodType type) {
-        this.type = type;
-    }
 
     public FoodVariations.MainIngredient getMainIngredient() {
         return mainIngredient;
     }
 
-    public void setMainIngredient(FoodVariations.MainIngredient mainIngredient) {
-        this.mainIngredient = mainIngredient;
-    }
 
     public FoodVariations.Seasoning getSeasoning() {
         return seasoning;
-    }
-
-    public void setSeasoning(FoodVariations.Seasoning seasoning) {
-        this.seasoning = seasoning;
     }
 
     public static String soupMaker() {

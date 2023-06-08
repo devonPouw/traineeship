@@ -1,6 +1,5 @@
 package com.devonpouw.SimpleExercises.BelowTwentyLines;
 
-import java.util.Scanner;
 
 public class Task17 {
     public static void AreaAndPerimeterCircle(double radius) {
