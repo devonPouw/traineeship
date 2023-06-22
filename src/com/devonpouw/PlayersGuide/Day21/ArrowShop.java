@@ -1,31 +1,38 @@
 package com.devonpouw.PlayersGuide.Day21;
 
+import java.util.Scanner;
+
 public class ArrowShop {
-    private Arrow.ArrowHead arrowHead;
-    private Arrow.Fletchling fletchling;
+    private final Arrow.ArrowHead arrowHead;
+    private final Arrow.Fletchling fletchling;
+
+    private int shaft;
 
     public ArrowShop(Arrow.ArrowHead arrowHead, Arrow.Fletchling fletchling) {
         this.arrowHead = arrowHead;
         this.fletchling = fletchling;
     }
 
-    public Arrow.ArrowHead getArrowHead() {
-        return arrowHead;
+    private Arrow createArrow(Arrow.Fletchling fletchling, Arrow.ArrowHead arrowHead, int shaft) {
+        Scanner sc = new Scanner(System.in);
+
+        return null;
     }
 
-    public void setArrowHead(Arrow.ArrowHead arrowHead) {
-        this.arrowHead = arrowHead;
+    public Arrow.ArrowHead getArrowHead() {
+        return arrowHead;
     }
 
     public Arrow.Fletchling getFletchling() {
         return fletchling;
     }
 
-    public void setFletchling(Arrow.Fletchling fletchling) {
-        this.fletchling = fletchling;
+    public void setShaft(int shaft) {
+        this.shaft = shaft;
     }
 
-    public static void makeArrow() {
-
+    public int getShaft() {
+        return shaft;
     }
+
 }

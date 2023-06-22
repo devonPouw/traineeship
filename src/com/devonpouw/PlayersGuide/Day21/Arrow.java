@@ -1,6 +1,7 @@
 package com.devonpouw.PlayersGuide.Day21;
 
 public class Arrow {
+
     public enum ArrowHead {
         STEEL,
         WOOD,
@@ -12,5 +13,5 @@ public class Arrow {
         TURKEY_FEATHERS,
         GOOSE_FEATHERS
     }
-    
+
 }
