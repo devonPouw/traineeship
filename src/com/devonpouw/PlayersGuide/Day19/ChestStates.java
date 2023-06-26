@@ -1,7 +1,5 @@
 package com.devonpouw.PlayersGuide.Day19;
 
-import java.awt.*;
-import java.util.Scanner;
 
 public enum ChestStates {
     OPEN("open"),
