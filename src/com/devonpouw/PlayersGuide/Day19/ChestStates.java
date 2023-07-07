@@ -11,3 +11,7 @@ public enum ChestStates {
         this.state = state;
     }
 }
+
+enum ChestAction {
+    OPEN, CLOSE, UNLOCK, LOCK
+}

@@ -1,55 +1,45 @@
 package com.devonpouw.PlayersGuide.Day21;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ArrowShop {
 
+    static List<Arrow> arrows = new ArrayList<>();
 
-    public static Arrow createEliteArrow() {
-        return new Arrow(ArrowHead.STEEL, Fletchling.PLASTIC, 95);
-    }
-
-    public static Arrow createMarksmanArrow() {
-        return new Arrow(ArrowHead.STEEL, Fletchling.GOOSE_FEATHERS, 65);
-    }
-
-    public static Arrow createBeginnerArrow() {
-        return new Arrow(ArrowHead.WOOD, Fletchling.GOOSE_FEATHERS, 75);
-    }
-
-    public static void printEliteArrow() {
-        System.out.println("2. The Elite Arrow:");
-        System.out.printf("Arrowhead: %s\nFletchling: %s\nLength: %scm\n", createEliteArrow().getArrowhead(), createEliteArrow().getFletchling(), createEliteArrow().getLength());
-    }
-
-    public static void printMarksmanArrow() {
-        System.out.println("1. The Marksman Arrow:");
-        System.out.printf("Arrowhead: %s\nFletchling: %s\nLength: %scm\n", createMarksmanArrow().getArrowhead(), createMarksmanArrow().getFletchling(), createMarksmanArrow().getLength());
-    }
-
-    public static void printBeginnerArrow() {
-        System.out.println("0. The Beginner Arrow:");
-        System.out.printf("Arrowhead: %s\nFletchling: %s\nLength: %scm\n", createBeginnerArrow().getArrowhead(), createBeginnerArrow().getFletchling(), createBeginnerArrow().getLength());
-    }
-
-    public static void pre_madeArrow() {
-        Scanner scanner = new Scanner(System.in);
-        printBeginnerArrow();
-        System.out.println();
-        printMarksmanArrow();
-        System.out.println();
-        printEliteArrow();
-        int arrowChoice = scanner.nextInt();
-        if (arrowChoice == 0) {
-            System.out.print("You chose The Beginner Arrow");
-        } else if (arrowChoice == 1) {
-            System.out.print("You chose The Marksman Arrow");
-        } else {
-            System.out.println("You chose the Elite Arrow");
+    public static void main(String[] args) {
+        welcome();
+        System.out.println("these are your arrows!");
+        for (Arrow arrow : arrows) {
+            System.out.println(arrowAsString(arrow));
         }
     }
 
-    private void createArrow() {
+    public static void printPreMadeArrowOptions() {
+        System.out.println("0. The Beginner Arrow:");
+        System.out.printf("Arrowhead: %s\nFletchling: %s\nLength: %scm\n", Arrow.createBeginnerArrow().getArrowhead(), Arrow.createBeginnerArrow().getFletchling(), Arrow.createBeginnerArrow().getLength());
+
+        System.out.println("1. The Marksman Arrow:");
+        System.out.printf("Arrowhead: %s\nFletchling: %s\nLength: %scm\n", Arrow.createMarksmanArrow().getArrowhead(), Arrow.createMarksmanArrow().getFletchling(), Arrow.createMarksmanArrow().getLength());
+
+        System.out.println("2. The Elite Arrow:");
+        System.out.printf("Arrowhead: %s\nFletchling: %s\nLength: %scm\n", Arrow.createEliteArrow().getArrowhead(), Arrow.createEliteArrow().getFletchling(), Arrow.createEliteArrow().getLength());
+    }
+
+    public static Arrow createPre_madeArrow() {
+        Scanner scanner = new Scanner(System.in);
+        printPreMadeArrowOptions();
+        int arrowChoice = scanner.nextInt();
+        if (arrowChoice == 0) {
+            return Arrow.createBeginnerArrow();
+        } else if (arrowChoice == 1) {
+            return Arrow.createMarksmanArrow();
+        }
+        return Arrow.createEliteArrow();
+    }
+
+    private static Arrow createCustomArrow() {
         Scanner sc = new Scanner(System.in);
         Arrow arrow = new Arrow(null, null, 0);
 
@@ -71,27 +61,31 @@ public class ArrowShop {
         System.out.println("Choose the length of the shaft between 60 & 100 cm: ");
         int lengthChoice = sc.nextInt();
         arrow.setLength(lengthChoice);
-//        float shaftCost = (lengthChoice * 0.05f);
-
-
-        System.out.printf("Your new arrow has a %s tip with a %s fletchling and is %s cm long\n", arrow.getArrowhead(), arrow.getFletchling(), arrow.getLength());
-
+        return arrow;
     }
 
+    private static String arrowAsString(Arrow arrow) {
+        return String.format("%s arrow tip with %s fletchling with a length of %d cm, costs %.2f gold", arrow.getArrowhead(), arrow.getFletchling(), arrow.getLength(), arrow.getCost());
+    }
 
-    public static void main(String[] args) {
-        ArrowShop shop = new ArrowShop();
+    private static void welcome() {
+        boolean quit;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to my arrowshop: \n" +
-                "Do you want to purchase a custom arrow or pre-made?");
-        System.out.println("0. custom");
-        System.out.println("1. pre-made");
-        int choice = scanner.nextInt();
-        if (choice == 0) {
-            shop.createArrow();
-        } else {
-            pre_madeArrow();
-        }
+        System.out.println("Welcome to my arrow shop: ");
+        do {
+            quit = false;
+            System.out.println("Custom arrow or pre-made?");
+            System.out.println("0. quit");
+            System.out.println("1. pre-made");
+            System.out.println("2. custom");
+            int choice = scanner.nextInt();
+            if (choice == 0) {
+                quit = true;
+            } else if (choice == 1) {
+                arrows.add(createPre_madeArrow());
+            } else {
+                arrows.add(createCustomArrow());
+            }
+        } while (!quit);
     }
-
 }

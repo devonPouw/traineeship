@@ -12,33 +12,33 @@ public class Day19Chest {
         return "The chest is currently: " + status;
     }
 
-    public void setStatus(String choice) {
+    public void setStatus(ChestAction action) {
         if (status == ChestStates.LOCKED) {
-            if (choice.equalsIgnoreCase("unlock")) {
+            if (action == ChestAction.UNLOCK) {
                 status = ChestStates.UNLOCKED;
-                System.out.println("The chest is now " + status);
-            } else if (choice.equalsIgnoreCase("lock") || choice.equalsIgnoreCase("close") || choice.equalsIgnoreCase("open")) {
+                System.out.println(getStatus());
+            } else if (action == ChestAction.LOCK || action == ChestAction.CLOSE || action == ChestAction.OPEN) {
                 System.out.println("this action is not possible because it's " + status);
             } else {
                 System.out.println("the chest is limited to do the following");
             }
         } else if (status == ChestStates.UNLOCKED) {
-            if (choice.equalsIgnoreCase("lock")) {
+            if (action == ChestAction.LOCK) {
                 status = ChestStates.LOCKED;
                 System.out.println("The chest is now " + status);
-            } else if (choice.equalsIgnoreCase("open")) {
+            } else if (action == ChestAction.OPEN) {
                 status = ChestStates.OPEN;
                 System.out.println("The chest is now " + status);
-            } else if (choice.equalsIgnoreCase("unlock") || choice.equalsIgnoreCase("close")) {
+            } else if (action == ChestAction.UNLOCK || action == ChestAction.CLOSE) {
                 System.out.println("this action is not possible because it's " + status);
             } else {
                 System.out.println("the chest is limited to do the following");
             }
         } else if (status == ChestStates.OPEN) {
-            if (choice.equalsIgnoreCase("close")) {
+            if (action == ChestAction.CLOSE) {
                 status = ChestStates.UNLOCKED;
                 System.out.println("The chest is now " + status);
-            } else if (choice.equalsIgnoreCase("open") || choice.equalsIgnoreCase("unlock") || choice.equalsIgnoreCase("lock")) {
+            } else if (action == ChestAction.OPEN || action == ChestAction.UNLOCK || action == ChestAction.LOCK) {
                 System.out.println("this action is not possible because it's " + status);
             } else {
                 System.out.println("the chest is limited to do the following");

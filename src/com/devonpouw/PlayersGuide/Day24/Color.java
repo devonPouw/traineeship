@@ -11,14 +11,14 @@ public class Color {
         this.b = b;
     }
 
-    static Color white = new Color(255, 255, 255);
-    static Color black = new Color(0, 0, 0);
-    static Color red = new Color(255, 0, 0);
-    static Color orange = new Color(255, 165, 0);
-    static Color yellow = new Color(255, 255, 0);
-    static Color green = new Color(0, 128, 0);
-    static Color blue = new Color(0, 0, 255);
-    static Color purple = new Color(128, 0, 128);
+    static final Color WHITE = new Color(255, 255, 255);
+    static final Color black = new Color(0, 0, 0);
+    static final Color red = new Color(255, 0, 0);
+    static final Color orange = new Color(255, 165, 0);
+    static final Color yellow = new Color(255, 255, 0);
+    static final Color green = new Color(0, 128, 0);
+    static final Color blue = new Color(0, 0, 255);
+    static final Color purple = new Color(128, 0, 128);
 
     public int getR() {
         return r;
@@ -33,7 +33,7 @@ public class Color {
     }
 
     public static Color getWhite() {
-        return white;
+        return WHITE;
     }
 
     public static Color getBlack() {

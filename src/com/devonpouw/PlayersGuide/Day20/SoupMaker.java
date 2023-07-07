@@ -12,6 +12,8 @@ public class SoupMaker {
             System.out.println(type.ordinal() + ". " + type);
         }
         int typeChoice = scanner.nextInt();
+        //todo: inputvalidatie
+        //later: functie maken voor opvragen input uit een enum
         FoodType selectedType = FoodType.values()[typeChoice];
 
         System.out.println("Select the main ingredient:");

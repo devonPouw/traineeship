@@ -6,7 +6,7 @@ enum CardColor {
     GREEN("green"),
     BLUE("blue"),
     YELLOW("yellow");
-    final String color;
+    private final String color;
 
     CardColor(String color) {
         this.color = color;
@@ -32,7 +32,7 @@ enum CardRank {
     PERCENT("%"),
     CIRCUMFLEX("^"),
     AMPERSAND("&");
-    final String rank;
+    private final String rank;
 
     CardRank(String rank) {
         this.rank = rank;
@@ -52,8 +52,16 @@ public class Card {
         this.cardRank = cardRank;
     }
 
+    private String symbolChecker() {
+
+        if (cardRank.ordinal() >= 10) {
+            return "(special card)";
+        }
+        return "(numbered card)";
+    }
+
     public void printDetails() {
-        System.out.printf("THE %s %s\n", cardColor, cardRank);
+        System.out.printf("THE %s %s %s\n", cardColor, cardRank, symbolChecker());
     }
 
 }

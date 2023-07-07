@@ -14,9 +14,10 @@ public class ChestRun {
         System.out.println("Welcome to this chest. It can open, close, unlock and lock\n");
         do {
             System.out.println("What would you like to do? (quit to stop)");
-            System.out.println("Chest is currently: " + newChest.getStatus());
+            System.out.println(newChest.getStatus());
             input = sc.next();
-            newChest.setStatus(input);
+            //convert input to action-enum: action = TryConvertStringToAction(input)
+//            newChest.setStatus(input);
         } while (!input.equalsIgnoreCase("quit"));
     }
 }

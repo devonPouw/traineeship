@@ -2,10 +2,24 @@ package com.devonpouw.PlayersGuide.Day21;
 
 public class Arrow {
 
+    public static Arrow createEliteArrow() {
+        return new Arrow(ArrowHead.STEEL, Fletchling.PLASTIC, 95);
+    }
+
+    public static Arrow createMarksmanArrow() {
+        return new Arrow(ArrowHead.STEEL, Fletchling.GOOSE_FEATHERS, 65);
+    }
+
+    public static Arrow createBeginnerArrow() {
+        return new Arrow(ArrowHead.WOOD, Fletchling.GOOSE_FEATHERS, 75);
+    }
+
     private ArrowHead arrowhead;
     private Fletchling fletchling;
     private int length;
-    private float cost;
+    
+
+    private static final float SHAFT_PRICE = 0.05f;
 
     public Arrow(ArrowHead arrowhead, Fletchling fletchling, int length) {
         this.arrowhead = arrowhead;
@@ -42,24 +56,37 @@ public class Arrow {
     }
 
     public float getCost() {
-        return cost;
+        return arrowhead.getPrice() + fletchling.getPrice() + SHAFT_PRICE * length;
     }
 }
 
 enum ArrowHead {
-    STEEL(10),
-    WOOD(3),
-    OBSIDIAN(5);
+    STEEL(10f),
+    WOOD(3f),
+    OBSIDIAN(5f);
+    private final float price;
 
-    ArrowHead(int price) {
+    ArrowHead(float price) {
+        this.price = price;
+    }
+
+    public float getPrice() {
+        return price;
     }
 }
+
 
 enum Fletchling {
     PLASTIC(10),
     TURKEY_FEATHERS(5),
     GOOSE_FEATHERS(3);
+    private final float price;
 
-    Fletchling(int price) {
+    Fletchling(float price) {
+        this.price = price;
+    }
+
+    public float getPrice() {
+        return price;
     }
 }

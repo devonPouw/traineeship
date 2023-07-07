@@ -8,3 +8,4 @@ Welcome to my journal that keeps up with my progression.
 2023-06-04 15:20 Started ArithmeticOperations SimpleExercises .. 15:22 finished ArithmeticOperations SimpleExercises
 2023-06-04 15:24 Started DisplayNumbersPlusCopies SimpleExercises .. 15:40 finished DisplayNumbersPlusCopies SimpleExercises
 2023-06-05 10:50 Started DecimalToOctal SimpleExercises .. 11:02 finished DecimalToOctal SimpleExercises
+2023-06-30 14:20 Started altering Day 26 of the players guide .. 15:30 stopped altering Day 26 of the players guide
