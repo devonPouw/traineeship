@@ -3,9 +3,9 @@ package com.devonpouw.PlayersGuide.Day26;
 
 public class Door {
     private DoorState doorState;
-    private int passcode;
+    private String passcode;
 
-    public Door(int passcode) {
+    public Door(String passcode) {
         doorState = DoorState.CLOSED;
         if (isValidPasscode(passcode)) {
             this.passcode = passcode;
@@ -18,23 +18,21 @@ public class Door {
         return "The door is currently " + doorState;
     }
 
-    private boolean isValidPasscode(int passcode) {
-        String passcodeString = String.valueOf(passcode);
-        return passcodeString.length() == 4 && passcodeString.matches("\\d+");
+    private boolean isValidPasscode(String passcode) {
+        return passcode.matches("\\d{4}");
     }
 
-    //todo: met 0 beginnen werkt niet?
-    public boolean changePasscode(int oldPasscode, int newPasscode) {
-        if (this.passcode == oldPasscode && isValidPasscode(newPasscode)) {
+    public boolean changePasscode(String oldPasscode, String newPasscode) {
+        if (this.passcode.equals(oldPasscode) && isValidPasscode(newPasscode)) {
             this.passcode = newPasscode;
             return true;
         }
         return false;
     }
 
-    public boolean unlock(int passcode) {
+    public boolean unlock(String givenPasscode) {
         if (doorState == DoorState.LOCKED) {
-            if (passcode == this.passcode) {
+            if (givenPasscode.equals(passcode)) {
                 doorState = DoorState.CLOSED;
                 System.out.println(getState());
                 return true;

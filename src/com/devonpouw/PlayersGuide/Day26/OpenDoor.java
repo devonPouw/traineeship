@@ -14,12 +14,9 @@ public class OpenDoor {
 
         do {
             System.out.print("Enter a 4 digit passcode: ");
-            String passcodeString = scanner.next();
             try {
-                int passcode = Integer.parseInt(passcodeString);
+                String passcode = scanner.next();
                 door = new Door(passcode);
-            } catch (NumberFormatException a) {
-                System.out.println("Only numbers are allowed");
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }

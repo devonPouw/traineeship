@@ -29,4 +29,10 @@ public class Day14 {
             System.out.print(jCopy + " ");
         }
     }
+
+    public static String repeatStr(final int repeat, final String string) {
+        StringBuilder stringBuilder = new StringBuilder(string);
+        stringBuilder.reverse();
+        return String.valueOf(stringBuilder);
+    }
 }
